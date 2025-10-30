@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Job Application</title>
+</head>
+<body style="margin:0;padding:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color:#f5f7fa;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:750px;margin:20px auto;">
+    
+    <!-- Header -->
+    <tr>
+      <td align="center" style="background: linear-gradient(135deg, #1976d2 0%, #2196F3 100%);padding:35px 20px;border-radius:12px 12px 0 0;">
+        <div style="background-color:#fff;width:70px;height:70px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-bottom:15px;">
+          <span style="font-size:35px;">👤</span>
+        </div>
+        <h1 style="color:#ffffff;font-size:26px;margin:0 0 8px 0;font-weight:600;">New Job Application Received</h1>
+        <p style="color:#bbdefb;font-size:14px;margin:0;">Recruitment Portal - {{company}}</p>
+      </td>
+    </tr>
+
+    <!-- Priority Alert -->
+    <tr>
+      <td style="background: linear-gradient(135deg, #ff6f00 0%, #ff9800 100%);padding:15px 30px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="color:#fff;font-size:14px;font-weight:600;">
+              ⚡ Action Required - New candidate awaiting review
+            </td>
+            <td align="right" style="color:#fff;font-size:13px;">
+              {{timestamp}}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Quick Overview Cards -->
+    <tr>
+      <td style="background-color:#ffffff;padding:30px 30px 20px 30px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Candidate Details -->
+    <tr>
+      <td style="background-color:#ffffff;padding:10px 30px 30px 30px;">
+        
+        <!-- Personal Information -->
+        <div style="margin-bottom:25px;">
+          <h3 style="color:#333;font-size:18px;margin:0 0 20px 0;font-weight:600;border-bottom:3px solid #2196F3;padding-bottom:10px;display:flex;align-items:center;">
+            <span style="background-color:#2196F3;color:#fff;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;font-size:16px;">👤</span>
+            Candidate Information
+          </h3>
+          
+          <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8f9fa;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="width:40%;color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Full Name
+              </td>
+              <td style="color:#1a1a1a;font-size:16px;padding:15px 20px;border-bottom:1px solid #e0e0e0;font-weight:600;">
+                {{name}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Email Address
+              </td>
+              <td style="color:#1976d2;font-size:15px;padding:15px 20px;border-bottom:1px solid #e0e0e0;">
+                <a href="mailto:{{email}}" style="color:#1976d2;text-decoration:none;font-weight:600;">{{email}}</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Phone Number
+              </td>
+              <td style="color:#1976d2;font-size:15px;padding:15px 20px;border-bottom:1px solid #e0e0e0;">
+                <a href="tel:{{phone}}" style="color:#1976d2;text-decoration:none;font-weight:600;">{{phone}}</a>
+              </td>
+            </tr>
+            <tr>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Job Details -->
+        <div style="margin-bottom:25px;">
+          <h3 style="color:#333;font-size:18px;margin:0 0 20px 0;font-weight:600;border-bottom:3px solid #4CAF50;padding-bottom:10px;display:flex;align-items:center;">
+            <span style="background-color:#4CAF50;color:#fff;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;font-size:16px;">💼</span>
+            Position Details
+          </h3>
+          
+          <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8f9fa;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="width:40%;color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Position Applied
+              </td>
+              <td style="color:#1a1a1a;font-size:16px;padding:15px 20px;border-bottom:1px solid #e0e0e0;font-weight:600;">
+                {{position}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Years of Experience
+              </td>
+              <td style="color:#333;font-size:15px;padding:15px 20px;border-bottom:1px solid #e0e0e0;">
+                {{experience}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color:#666;font-size:14px;font-weight:600;padding:15px 20px;border-bottom:1px solid #e0e0e0;background-color:#fafafa;">
+                Preferred Location
+              </td>
+              <td style="color:#333;font-size:15px;padding:15px 20px;border-bottom:1px solid #e0e0e0;">
+                {{location}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color:#666;font-size:14px;font-weight:600;padding:15px 20px;background-color:#fafafa;">
+                Notice Period
+              </td>
+              <td style="color:#333;font-size:15px;padding:15px 20px;">
+                {{notice}}
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Documents Section -->
+        <div style="margin-bottom:25px;" id="documents-section">
+          <h3 style="color:#333;font-size:18px;margin:0 0 20px 0;font-weight:600;border-bottom:3px solid #ff9800;padding-bottom:10px;display:flex;align-items:center;">
+            <span style="background-color:#ff9800;color:#fff;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;font-size:16px;">📎</span>
+            Uploaded Documents
+          </h3>
+          
+          <div style="background-color:#fff8e1;border-radius:8px;padding:20px;border-left:4px solid #ff9800;">
+            <!-- Documents will be dynamically added here -->
+            {{documents}}
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="text-align:center;margin:35px 0 25px 0;padding:25px;background: linear-gradient(135deg, #f5f5f5 0%, #eeeeee 100%);border-radius:8px;">
+          <p style="margin:0 0 20px 0;color:#666;font-size:14px;font-weight:600;">Take Action</p>
+          <a href="mailto:{{email}}" style="display:inline-block;background: linear-gradient(135deg, #2196F3 0%, #42a5f5 100%);color:#fff;text-decoration:none;padding:14px 30px;border-radius:6px;font-size:15px;font-weight:600;margin:0 8px;box-shadow:0 4px 12px rgba(33,150,243,0.3);">
+            📧 Email Candidate
+          </a>
+          <a href="tel:{{phone}}" style="display:inline-block;background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);color:#fff;text-decoration:none;padding:14px 30px;border-radius:6px;font-size:15px;font-weight:600;margin:0 8px;box-shadow:0 4px 12px rgba(76,175,80,0.3);">
+            📞 Call Candidate
+        </div>
+
+        <!-- Important Reminder -->
+        <div style="background-color:#ffebee;border-left:4px solid #f44336;padding:18px 20px;border-radius:4px;">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="width:40px;vertical-align:top;">
+                <div style="background-color:#f44336;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:bold;">!</div>
+              </td>
+              <td style="padding-left:15px;">
+                <p style="margin:0;color:#c62828;font-size:14px;line-height:1.7;font-weight:600;">
+                  <strong>Response Time Policy</strong><br>
+                  <span style="font-weight:400;color:#d32f2f;">Please review this application within 48 hours and update the candidate's status in the recruitment system to maintain our hiring standards.</span>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+      <td align="center" style="background-color:#f5f7fa;padding:25px 20px;border-radius:0 0 12px 12px;">
+        <p style="margin:0 0 5px 0;font-size:13px;color:#999;">
+          <a href="{{admin_dashboard_url}}" style="color:#2196F3;text-decoration:none;font-weight:600;">Admin Dashboard</a> | 
+          <a href="#" style="color:#2196F3;text-decoration:none;margin-left:10px;">Recruitment Settings</a>
+        </p>
+        <p style="margin:5px 0 0 0;font-size:12px;color:#999;line-height:1.6;">
+          Automated notification from {{company}} Recruitment System<br>
+          <span style="color:#bbb;">Generated on {{timestamp}}</span>
+        </p>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+node_modules
+.env
+SEEDER_SQL.sql
+.DS_Store
+public/uploads
